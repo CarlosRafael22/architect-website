@@ -131,6 +131,7 @@ export default function ProcessSection() {
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import ProcessStep from "./ProcessStep/ProcessStep";
 
 const processSteps = [
   {
@@ -194,26 +195,7 @@ export default function ProcessSection() {
           <div className="overflow-x-auto pb-8">
             <div className="flex space-x-6 min-w-max">
               {processSteps.map((step, index) => (
-                <div
-                  key={index}
-                  className="w-80 bg-gray-50 rounded-xl p-6 shadow-sm flex flex-col"
-                >
-                  <div className="text-4xl font-bold text-primary mb-4">
-                    {step.number}
-                  </div>
-                  <h3 className="text-xl font-bold mb-4">{step.title}</h3>
-                  <p className="text-gray-600 mb-6 flex-grow">
-                    {step.description}
-                  </p>
-                  <div className="text-sm text-gray-500">
-                    <p>
-                      <strong>Duration:</strong> {step.duration}
-                    </p>
-                    <p>
-                      <strong>Investment:</strong> {step.investment}
-                    </p>
-                  </div>
-                </div>
+                <ProcessStep {...step} key={index} />
               ))}
             </div>
           </div>
@@ -225,7 +207,7 @@ export default function ProcessSection() {
             href="#contact"
             className="inline-flex items-center justify-center py-3 px-8 bg-primary text-white font-medium rounded-md hover:bg-primary/90 transition-colors"
           >
-            Want to know how your space can be transformed?{" "}
+            Quer saber como o seu espaço pode ser transformado?{" "}
             <ArrowRight className="ml-2" size={18} />
           </Link>
         </div>

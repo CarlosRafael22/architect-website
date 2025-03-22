@@ -8,6 +8,57 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
+import FooterLinksList from "@/components/molecules/home/FooterLinksList/FooterLinksList";
+
+const quickLinks = [
+  {
+    text: "What is Neuroarchitecture",
+    href: "#neuroarchitecture",
+  },
+  {
+    text: "About",
+    href: "about",
+  },
+  {
+    text: "Services",
+    href: "#services",
+  },
+  {
+    text: "Design Process",
+    href: "#process",
+  },
+  {
+    text: "Portfolio",
+    href: "#portfolio",
+  },
+  {
+    text: "Contact",
+    href: "#contact",
+  },
+];
+
+const resourcesLinks = [
+  {
+    text: "Blog",
+    href: "#",
+  },
+  {
+    text: "Free Neuroarchitecture Guide",
+    href: "#",
+  },
+  {
+    text: "Research & Case Studies",
+    href: "#",
+  },
+  {
+    text: "Neuroarchitecture Assessment",
+    href: "#",
+  },
+  {
+    text: "Newsletter",
+    href: "#",
+  },
+];
 
 export default function Footer() {
   return (
@@ -42,90 +93,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-white font-semibold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="#neuroarchitecture"
-                  className="hover:text-primary transition-colors"
-                >
-                  What is Neuroarchitecture
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="hover:text-primary transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#services"
-                  className="hover:text-primary transition-colors"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#process"
-                  className="hover:text-primary transition-colors"
-                >
-                  Design Process
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#portfolio"
-                  className="hover:text-primary transition-colors"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="hover:text-primary transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-semibold mb-6">Resources</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Free Neuroarchitecture Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Research & Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Neuroarchitecture Assessment
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary transition-colors">
-                  Newsletter
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <FooterLinksList title="Quick Links" links={quickLinks} />
+          <FooterLinksList title="Resources" links={resourcesLinks} />
 
           <div>
             <h3 className="text-white font-semibold mb-6">Contact</h3>
