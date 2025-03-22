@@ -8,8 +8,8 @@ export default function AboutSection() {
           <div className="md:w-2/5">
             <div className="relative w-full aspect-[3/4] max-w-md mx-auto md:mx-0">
               <Image
-                src="https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=900&width=600"
-                alt="Portrait of the architect"
+                src="/images/thereza.jpg"
+                alt="Thereza Oliveira"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -18,7 +18,7 @@ export default function AboutSection() {
 
           <div className="md:w-3/5">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              About the Architect
+              Quem sou eu?
             </h2>
 
             <div className="space-y-6">

@@ -1,58 +1,51 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center">
       <div className="absolute inset-0 z-0">
-        <div
-          className="w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=1080&width=1920')",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="absolute inset-0 bg-black/40"></div> {/* Overlay */}
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/headerProject.jpg"
+            alt="Interior Architecture"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/30" />
         </div>
       </div>
 
-      {/* Content */}
-      <div className="container mx-auto px-4 z-10 text-white">
+      <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Transforming Spaces with Science & Emotion
+          <h1 className="font-display text-3xl md:text-5xl text-white mb-8 leading-tight">
+            Transformando espaços através da ciência e emoção
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 text-white/90">
-            Experience Neuroarchitecture in Your Home or Office
+          <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed max-w-2xl">
+            Criando ambientes que elevam o bem-estar, a produtividade e as
+            emoções através de soluções arquitetônicas baseadas em evidências.
           </p>
-          <p className="text-lg mb-10 max-w-2xl">
-            Designing spaces that enhance well-being, productivity, and emotions
-            through evidence-based architectural solutions.
-          </p>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="flex flex-col sm:flex-row gap-6">
             <Link
-              href="#process"
-              className="py-3 px-6 bg-white text-primary font-medium rounded-md hover:bg-white/90 transition-colors text-center"
+              href="#metodologia"
+              className="px-8 py-4 bg-white text-primary hover:bg-white/90 transition-colors text-center"
             >
-              See How It Works
+              NOSSA METODOLOGIA
             </Link>
             <Link
-              href="#contact"
-              className="py-3 px-6 bg-primary text-white font-medium rounded-md hover:bg-primary/90 transition-colors text-center"
+              href="#contato"
+              className="px-8 py-4 border border-white text-white hover:bg-white/10 transition-colors text-center"
             >
-              Book a Consultation
+              AGENDE UMA CONSULTA
             </Link>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <Link href="#neuroarchitecture">
-          <ArrowDown className="text-white" size={32} />
-        </Link>
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white text-center">
+        <p className="text-sm tracking-widest mb-4">SCROLL</p>
+        <div className="w-px h-16 bg-white/50 mx-auto" />
       </div>
     </section>
   );
