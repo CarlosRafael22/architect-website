@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Play } from "lucide-react";
+/* import { Play } from "lucide-react"; */
 
 interface CaseStudyProps {
   id: number;
@@ -55,28 +55,28 @@ const CaseStudy = ({
 
         {/* Case Study */}
         <div className="mb-8">
-          <h4 className="text-lg font-semibold mb-4">Case Study</h4>
+          {/* <h4 className="text-lg font-semibold mb-4">Case Study</h4> */}
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h5 className="font-medium mb-2">The Problem</h5>
+              <h5 className="font-medium mb-2">Desejos do cliente</h5>
               <p className="text-sm text-gray-600">{problem}</p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h5 className="font-medium mb-2">The Solution</h5>
+              <h5 className="font-medium mb-2">O que fizemos</h5>
               <p className="text-sm text-gray-600">{solution}</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            {/*             <div className="bg-gray-50 p-6 rounded-lg">
               <h5 className="font-medium mb-2">The Results</h5>
               <p className="text-sm text-gray-600">{result}</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Before & After */}
-        <div className="mb-8">
+        {/*         <div className="mb-8">
           <h4 className="text-lg font-semibold mb-4">Before & After</h4>
 
           <div className="grid md:grid-cols-2 gap-4">
@@ -108,10 +108,10 @@ const CaseStudy = ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Testimonial */}
-        <div className="border-t pt-8">
+        {/*         <div className="border-t pt-8">
           <div className="bg-gray-50 p-6 rounded-lg relative">
             <div className="absolute -top-8 left-6 w-16 h-16 rounded-full overflow-hidden border-4 border-white">
               <Image
@@ -129,7 +129,7 @@ const CaseStudy = ({
               <Play size={20} />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
