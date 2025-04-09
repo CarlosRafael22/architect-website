@@ -1,16 +1,14 @@
 import Link from "next/link";
 import {
-  Facebook,
   Instagram,
   Linkedin,
-  Twitter,
   Mail,
-  MapPin,
+  // MapPin,
   Phone,
 } from "lucide-react";
-import FooterLinksList from "@/components/molecules/home/FooterLinksList/FooterLinksList";
+// import FooterLinksList from "@/components/molecules/home/FooterLinksList/FooterLinksList";
 
-const quickLinks = [
+/* const quickLinks = [
   {
     text: "What is Neuroarchitecture",
     href: "#neuroarchitecture",
@@ -58,62 +56,62 @@ const resourcesLinks = [
     text: "Newsletter",
     href: "#",
   },
-];
+]; */
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> */}
+        <div className="flex flex-col md:flex-row justify-between gap-8">
+          <div className="max-w-md">
             <Link
               href="/"
-              className="text-xl font-bold tracking-tighter text-white mb-6 block"
+              className="text-xl tracking-tighter font-[Alethia_Next] text-white mb-6 block"
             >
-              NEURO<span className="text-primary">ARCHITECT</span>
+              THEREZA <span className="text-primary">OLIVEIRA</span>
             </Link>
             <p className="text-sm mb-6">
-              Creating evidence-based architectural solutions that enhance
-              wellbeing, productivity, and emotional balance through the
-              principles of neuroscience.
+              Criando ambientes que estimulam o bem-estar através da união entre
+              Neurociência e Arquitetura.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-primary transition-colors">
-                <Facebook size={20} />
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
+              <Link
+                href="https://www.instagram.com/therezaoliveiraarquiteta"
+                className="hover:text-primary transition-colors"
+              >
                 <Instagram size={20} />
               </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                <Twitter size={20} />
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
+              <Link
+                href="https://www.linkedin.com/in/thereza-oliveira-56575a265/"
+                className="hover:text-primary transition-colors"
+              >
                 <Linkedin size={20} />
               </Link>
             </div>
           </div>
 
-          <FooterLinksList title="Quick Links" links={quickLinks} />
-          <FooterLinksList title="Resources" links={resourcesLinks} />
+          {/*           <FooterLinksList title="Quick Links" links={quickLinks} />
+          <FooterLinksList title="Resources" links={resourcesLinks} /> */}
 
           <div>
-            <h3 className="text-white font-semibold mb-6">Contact</h3>
+            <h3 className="text-white font-semibold mb-6">Contato</h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
+              {/*               <li className="flex items-start">
                 <MapPin size={20} className="mr-3 mt-0.5 text-primary" />
                 <span>
                   123 Design Street
                   <br />
                   New York, NY 10001
                 </span>
-              </li>
+              </li> */}
               <li className="flex items-center">
                 <Phone size={20} className="mr-3 text-primary" />
-                <span>(123) 456-7890</span>
+                <span>(81) 98104-1352</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-3 text-primary" />
-                <span>info@neuroarchitect.com</span>
+                <span>therezaoliveiraarquiteta@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -121,9 +119,10 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">
-            © {new Date().getFullYear()} NeuroArchitect. All rights reserved.
+            © {new Date().getFullYear()} Thereza Oliveira Arquitetura. Todos os
+            direitos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          {/*           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link
               href="#"
               className="text-sm hover:text-primary transition-colors"
@@ -142,7 +141,7 @@ export default function Footer() {
             >
               Cookie Policy
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
