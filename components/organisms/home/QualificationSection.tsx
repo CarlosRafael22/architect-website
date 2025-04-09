@@ -96,15 +96,15 @@ export default function QualificationSection() {
   const hasAnsweredQuestionnaire = step === questions.length;
 
   return (
-    <section id="qualification" className="py-20 bg-white">
+    <section id="qualificacao" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Is Neuroarchitecture Right for You?
+            A Metodologia Casa Viva é para você?
           </h2>
           <p className="text-lg text-gray-700">
-            Answer a few quick questions to determine if my approach is the
-            right fit for your needs and goals.
+            Responda a algumas perguntas rápidas para determinar se minha
+            abordagem é a mais adequada às suas necessidades.
           </p>
         </div>
 
