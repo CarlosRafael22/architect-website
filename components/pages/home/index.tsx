@@ -20,8 +20,8 @@ export default function Home() {
       <ServicesSection />
       <ProcessSection />
       <PortfolioSection />
-      <QualificationSection />
-      <FaqSection />
+      {/* <QualificationSection /> */}
+      {/*       <FaqSection /> */}
       <CtaSection />
       <Footer />
     </main>
