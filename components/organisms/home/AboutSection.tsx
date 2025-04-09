@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-16">
-          <div className="md:w-2/5">
+          <div className="w-full md:w-2/5">
             <div className="relative w-full aspect-[3/4] max-w-md mx-auto md:mx-0">
               <Image
-                src="/images/thereza.jpg"
+                src="/images/thereza_about.jpg"
                 alt="Thereza Oliveira"
                 fill
                 className="object-cover rounded-lg"
@@ -16,17 +16,25 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="md:w-3/5">
+          <div className="w-full md:w-3/5">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Quem sou eu?
             </h2>
 
             <div className="space-y-6">
               <p className="text-lg text-gray-700">
-                With over 15 years of experience in architectural design and a
-                specialized education in neuroscience applications for built
-                environments, I've dedicated my career to creating spaces that
-                truly serve the people who use them.
+                Oi, eu sou a Thereza Oliveira, especialista em Neuroarquitetura.
+                Sou apaixonada por criar espaços que vão além da estética —
+                ambientes que acolhem, equilibram e transformam a vida de quem
+                os habita. Acredito no poder dos espaços para influenciar nossas
+                emoções, bem-estar e qualidade de vida. Por isso, meu trabalho
+                une design, ciência e sensibilidade para criar experiências
+                autênticas e cheias de propósito.
+              </p>
+
+              <p className="text-lg text-gray-700 underline underline-offset-4 font-medium hover:text-primary transition-colors">
+                Se você busca um lar que reflita quem você é e o que precisa
+                sentir, estou aqui pra te ajudar a construir esse lugar.
               </p>
 
               <div className="border-l-4 border-primary pl-6 py-2">
@@ -39,31 +47,42 @@ export default function AboutSection() {
               </div>
 
               <p className="text-lg text-gray-700">
-                My journey into Neuroarchitecture began when I was designing a
-                recovery center for patients with traumatic brain injuries.
-                Witnessing how spatial design directly impacted their healing
-                process transformed my approach to architecture forever.
+                Minha conexão com a Neuroarquitetura começou muito antes de
+                conhecer esse nome. Sempre fui apaixonada por autoconhecimento,
+                psicologia e desenvolvimento pessoal. Ao longo da minha
+                trajetória na Arquitetura, sentia falta de um propósito mais
+                profundo — queria criar espaços que realmente transformassem a
+                vida das pessoas.
               </p>
 
               <p className="text-lg text-gray-700">
-                Since then, I've applied these principles to every project –
-                from residential homes to corporate headquarters – helping
-                clients create spaces that not only look beautiful but
-                functionally support cognitive performance, emotional wellbeing,
-                and physical health.
+                Foi quando descobri a Neuroarquitetura e entendi que era
+                possível unir minhas duas paixões: o design e o ser humano.
+                Através dela, encontrei um caminho para projetar ambientes que
+                acolhem, equilibram, curam e promovem bem-estar. Hoje,
+                desenvolvo projetos com alma, propósito e a certeza de que os
+                espaços têm o poder de impactar positivamente quem os vive.
               </p>
 
-              <div className="flex flex-wrap gap-4 pt-4">
+              <p className="text-lg text-gray-700">
+                Desde então, aplico esses princípios a cada projeto – desde
+                casas residenciais até corporações – ajudando clientes a criar
+                espaços que não apenas se parecem bonitos, mas também funcionam
+                para apoiar o desempenho cognitivo, bem-estar emocional e saúde
+                física.
+              </p>
+
+              {/*               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="bg-gray-100 px-4 py-2 rounded-full text-sm">
-                  Master of Architecture, Harvard GSD
+                  Arquitetura e Urbanismo, Faculdade Damas - Recife
                 </div>
                 <div className="bg-gray-100 px-4 py-2 rounded-full text-sm">
-                  Neuroscience in Design Certificate, ANFA
+                  Master em Neuroarquitetura, IPOG
                 </div>
                 <div className="bg-gray-100 px-4 py-2 rounded-full text-sm">
-                  15+ Years Experience
+                  5+ anos de experiência
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
