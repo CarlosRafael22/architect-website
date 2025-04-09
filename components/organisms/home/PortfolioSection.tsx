@@ -4,31 +4,31 @@ import { useState } from "react";
 import CaseStudy from "./CaseStudy/CaseStudy";
 
 export default function PortfolioSection() {
-  const [selectedCategory, setSelectedCategory] = useState("residential");
+  const [selectedCategory, setSelectedCategory] = useState("harmonia");
 
   const categories = [
-    { name: "Residential", id: "residential" },
-    { name: "Commercial", id: "commercial" },
-    { name: "Renovations", id: "renovations" },
+    { name: "Apartamento Harmonia", id: "harmonia" },
+    { name: "Apartamento Raízes", id: "raizes" },
+    { name: "Casa Palmeiras", id: "palmeiras" },
   ];
 
   const projects = [
     {
       id: 1,
-      category: "residential",
-      title: "Cognitive Wellness Home",
+      category: "harmonia",
+      title: "Apartamento Harmonia",
       description:
-        "A residence designed to support family connection, reduce stress, and improve sleep quality through neuroarchitecture principles.",
+        "Esse projeto foi desenvolvido para criar uma atmosfera de calma, equilíbrio e conexão com a natureza — um verdadeiro refúgio de tranquilidade dentro de casa.",
       problem:
-        "A family of four struggled with a disconnected home layout that created stress and hindered quality time together.",
+        "A cliente buscava um espaço que proporcionasse bem-estar emocional e acolhimento, que refletisse também seu amor por plantas mas sem pesar no ambiente. Também queria um apartamento funcional, e que cada cantinho fosse bem aproveitado.",
       solution:
-        "Redesigned the space with open communal areas, cognitive restoration zones, and circadian lighting systems.",
+        "Trabalhamos com uma paleta de tons suaves, iluminação acolhedora e materiais naturais. Incorporamos formas orgânicas, que são visualmente leves e menos nocivas ao cérebro, favorecendo a sensação de relaxamento. Texturas e cores aconchegantes foram aplicadas em diversos elementos, criando um ambiente equilibrado e confortável. Na sala, também priorizamos a praticidade com móveis que aliam estética e funcionalidade, como a cristaleira, o móvel lateral e o canto alemão que funciona como baú.",
       result:
         "The family reported 40% better sleep quality and significantly increased family interaction time.",
       images: [
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
+        "/images/portfolio/apto_alyne/apto_alyne5.jpg",
+        "/images/portfolio/apto_alyne/apto_alyne2.jpg",
+        "/images/portfolio/apto_alyne/apto_alyne3.jpg",
       ],
       before:
         "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=500&width=700",
@@ -44,20 +44,20 @@ export default function PortfolioSection() {
     },
     {
       id: 2,
-      category: "commercial",
-      title: "Creative Agency Headquarters",
+      category: "raizes",
+      title: "Apartamento Raízes",
       description:
-        "An office designed to enhance creativity, collaboration, and focus for a growing digital agency.",
+        "O Apartamento Raízes foi inspirado na natureza e no Design Biofílico, com o objetivo de promover bem-estar e despertar memórias afetivas por meio da Arquitetura.",
       problem:
-        "The agency struggled with a conventional office layout that hindered creativity and caused frequent distractions.",
+        "A família queria um lar aconchegante, leve e que fosse funcional para o dia a dia. Desejavam também espaços clean, convidativos e que proporcionassem integração dos familiares que visitavam com frequência seu apartamento.",
       solution:
-        "Created a neuroscience-informed workspace with varied environments optimized for different cognitive tasks.",
+        "Utilizamos formas orgânicas e convidativas, tons terrosos e texturas amadeiradas para criar leveza e acolhimento. A mesa redonda convida à interação harmônica durante as refeições, além da integração entre varanda, sala e cozinha, induzindo a interação entre todos que estão no espaço. Por fim, um grande quadro remete ao local onde viveram há anos atrás, em conexão com a natureza.",
       result:
         "32% increase in team-reported creative output and 28% improvement in meeting productivity.",
       images: [
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
+        "/images/portfolio/apto_raizes/sala_raizes.jpg",
+        "/images/portfolio/apto_raizes/cozinha_raizes.jpg",
+        "/images/portfolio/apto_raizes/quarto_raizes.jpg",
       ],
       before:
         "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=500&width=700",
@@ -73,20 +73,20 @@ export default function PortfolioSection() {
     },
     {
       id: 3,
-      category: "renovations",
-      title: "Wellness Clinic Renovation",
+      category: "palmeiras",
+      title: "Casa Palmeiras",
       description:
-        "A healthcare space transformed to reduce patient anxiety and support healing through environmental design.",
+        "A Casa Palmeiras foi idealizada como um lar sereno, com atmosfera leve e convidativa, inspirada na natureza e no desejo de tranquilidade.",
       problem:
-        "A medical clinic with high reported patient anxiety and a clinical atmosphere that didn't support healing.",
+        "Os clientes queriam uma casa com base clara e limpa, que transmitisse leveza e sofisticação. Era importante para eles que o espaço refletisse essa sensação logo na entrada. Desejavam também uma boa área de lazer, para descansar aos finas de semana com a família.",
       solution:
-        "Renovated with biophilic design elements, natural materials, optimized acoustics, and thoughtful spatial flow.",
+        "Utilizamos tons claros como base e apostamos em texturas amadeiradas e elementos decorativos em tons terrosos para trazer aconchego e sofisticação. Um dos destaques é a fachada com duas palmeiras que, além do valor estético, criam sombra e um som natural relaxante. Essa conexão com a natureza é aproveitada na área de lazer no pavimento superior da casa, que agora conta com uma piscina e área gourmet.",
       result:
         "45% reduction in patient-reported anxiety levels and 22% improvement in staff satisfaction.",
       images: [
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
-        "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=600&width=800",
+        "/images/portfolio/casa_palmares/fachada_palmeiras.jpg",
+        "/images/portfolio/casa_palmares/gourmet_palmeiras.jpg",
+        "/images/portfolio/casa_palmares/sala_palmeiras.jpg",
       ],
       before:
         "https://kzmofiv4xhoyqd3ignlm.lite.vusercontent.net/placeholder.svg?height=500&width=700",
@@ -112,17 +112,15 @@ export default function PortfolioSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Portfolio & Case Studies
+            Projetos em destaque
           </h2>
-          <p className="text-lg text-gray-700">
-            Explore my neuroscience-informed architectural projects and see the
-            measurable impact they've had on people's wellbeing, productivity,
-            and happiness.
-          </p>
+          {/*           <p className="text-lg text-gray-700">
+            Explore meus projetos e veja o impacto que eles têm em pessoas.
+          </p> */}
         </div>
 
         {/* Custom Tab Navigation */}
-        <div className="flex flex-wrap justify-center space-x-2 mb-12">
+        <div className="flex flex-wrap justify-center space-x-2 mb-12 gap-4">
           {categories.map((category) => (
             <button
               key={category.id}
