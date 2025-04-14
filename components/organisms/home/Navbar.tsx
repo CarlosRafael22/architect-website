@@ -29,7 +29,7 @@ export default function Navbar() {
             href="#metodologia"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
-            Metodologia
+            Método
           </Link>
           <Link
             href="#sobre"
@@ -53,7 +53,7 @@ export default function Navbar() {
             href="#portfolio"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
-            Portfolio
+            Portfólio
           </Link>
           <Link
             href={WHATSAPP_LINK}
@@ -81,7 +81,7 @@ export default function Navbar() {
               className="text-sm font-medium hover:text-primary py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Metodologia
+              Método
             </Link>
             <Link
               href="#sobre"
@@ -109,11 +109,11 @@ export default function Navbar() {
               className="text-sm font-medium hover:text-primary py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Portfolio
+              Portfólio
             </Link>
             <Link
               href={WHATSAPP_LINK}
-              className="px-4 py-2 bg-primary text-white text-center rounded hover:bg-primary/90 transition-colors inline-block"
+              className="px-4 py-2 primary-button"
               onClick={() => setIsMenuOpen(false)}
             >
               {BEGIN_TRANSFORMATION}
