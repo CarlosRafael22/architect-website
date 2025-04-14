@@ -4,6 +4,7 @@ import {
   Linkedin,
   Mail,
   // MapPin,
+  Youtube,
   Phone,
 } from "lucide-react";
 // import FooterLinksList from "@/components/molecules/home/FooterLinksList/FooterLinksList";
@@ -88,6 +89,12 @@ export default function Footer() {
               >
                 <Linkedin size={20} />
               </Link>
+              <Link
+                href="https://www.youtube.com/@therezaoliveiraneuroarq"
+                className="hover:text-primary transition-colors"
+              >
+                <Youtube size={20} />
+              </Link>
             </div>
           </div>
 
@@ -117,7 +124,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">
             © {new Date().getFullYear()} Thereza Oliveira Arquitetura. Todos os
             direitos reservados.

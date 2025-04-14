@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard/ServiceCard";
 
 export default function ServicesSection() {
   return (
-    <section id="servicos" className="py-20 bg-gray-50">
+    <section id="servicos" className="gray-section">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Meus serviços</h2>
@@ -15,7 +15,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8">
           <ServiceCard
             icon={<Building className="text-primary" size={24} />}
             title="Projeto arquitetônico"

@@ -64,3 +64,21 @@ html {
   content: "";
   @apply absolute -bottom-4 left-1/2 h-px w-24 -translate-x-1/2 bg-primary;
 }
+
+@layer components {
+  .white-section {
+    @apply py-14 md:py-20 bg-white;
+  }
+  
+  .primary-section {
+    @apply py-14 md:py-20 bg-primary text-white;
+  }
+  
+  .gray-section {
+    @apply py-14 md:py-20 bg-gray-50;
+  }
+
+  .primary-button {
+    @apply bg-primary text-white rounded hover:bg-primary/90 transition-colors text-center;
+  }
+}
