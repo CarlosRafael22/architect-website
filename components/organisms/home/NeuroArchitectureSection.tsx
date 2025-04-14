@@ -3,11 +3,11 @@ import { Brain, Activity, Smile, Plus, Equal } from "lucide-react";
 
 export default function NeuroarchitectureSection() {
   return (
-    <section id="metodologia" className="py-20 bg-gray-50">
+    <section id="metodologia" className="gray-section">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Metodologia Casa Viva
+            Método Casa Viva
           </h2>
           <p className="text-lg text-gray-700">
             {/*             Neuroarchitecture is the intersection of neuroscience and
@@ -18,9 +18,10 @@ export default function NeuroarchitectureSection() {
             {/*             Combinando Neuroarquitetura e Psicologia Ambiental: Ambientes que
             Transformam Nosso ambiente impacta diretamente nossas emoções e
             bem-estar. */}
-            Nosso ambiente impacta diretamente nossas emoções e bem-estar. Minha
-            metodologia une Neuroarquitetura e Psicologia Ambiental para criar
-            espaços que promovem saúde, equilíbrio e qualidade de vida.
+            Nosso ambiente impacta diretamente nossas emoções e bem-estar. Por
+            isso, nossos projetos unem Neuroarquitetura e Psicologia Ambiental
+            para criar espaços que promovem saúde, equilíbrio e qualidade de
+            vida.
             {/*             A Neuroarquitetura estuda como o ambiente
             influencia o cérebro e emoções, utilizando iluminação, biofilia e
             organização espacial para estimular bem-estar e produtividade. Já a
@@ -70,9 +71,7 @@ export default function NeuroarchitectureSection() {
             <div className="mb-4 text-primary">
               <Smile size={40} />
             </div>
-            <h3 className="text-xl font-semibold mb-3">
-              Metodologia Casa Viva
-            </h3>
+            <h3 className="text-xl font-semibold mb-3">Método Casa Viva</h3>
             <p className="text-gray-600">
               Ao integrar essas áreas, desenvolvo projetos que vão além da
               estética, criando ambientes intencionais que acolhem, estimulam e
@@ -83,7 +82,7 @@ export default function NeuroarchitectureSection() {
             </p>
           </div>
         </div>
-        <div className="pb-8">
+        <div>
           <div className="bg-white p-6 rounded-lg relative">
             <div className="absolute -top-8 left-6 w-16 h-16 rounded-full overflow-hidden border-4 border-white">
               <Image
@@ -95,9 +94,8 @@ export default function NeuroarchitectureSection() {
             </div>
             <div className="pl-0 pt-8 md:pt-0 md:pl-16">
               <p className="text-gray-700 italic mb-2">
-                "Seja para residências, escritórios ou espaços comerciais, meu
-                objetivo é proporcionar conforto e conexão entre as pessoas e os
-                espaços que habitam."
+                "Se você busca um lar que reflita quem você é e o que precisa
+                sentir, estou aqui para te ajudar a construir esse lugar."
               </p>
               <a
                 className="text-sm underline underline-offset-4 font-medium hover:text-primary transition-colors"
