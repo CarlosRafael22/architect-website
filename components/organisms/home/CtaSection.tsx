@@ -5,15 +5,15 @@ import { BEGIN_TRANSFORMATION, WHATSAPP_LINK } from "@/const/strings";
 
 export default function CtaSection() {
   return (
-    <section id="contato" className="py-20 bg-primary text-white">
+    <section id="contato" className="primary-section">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Quer deixar sua casa com vida?
           </h2>
           <p className="text-xl md:text-2xl opacity-90 mb-8">
-            Agende uma consulta gratuita e descubra como posso transformar seu
-            ambiente e melhorar sua qualidade de vida.
+            Descubra como posso transformar seu ambiente e melhorar sua
+            qualidade de vida através do nosso método.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
