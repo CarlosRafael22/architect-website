@@ -17,13 +17,11 @@ const BulletPoint = ({ text }: { text: string }) => (
 const BenefitsList = () => (
   <div className="bg-white/10 rounded-lg p-8 max-w-xl mx-auto">
     <h3 className="text-xl font-semibold mb-4">
-      Benefícios da Metodologia Casa Viva
+      Benefícios do método Casa Viva
     </h3>
     <ul className="space-y-3 text-left">
       {benefits.map((benefit, index) => (
-        <li className="flex items-start">
-          <BulletPoint key={index} text={benefit} />
-        </li>
+        <BulletPoint text={benefit} key={index} />
       ))}
     </ul>
   </div>
