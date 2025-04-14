@@ -96,11 +96,11 @@ export default function QualificationSection() {
   const hasAnsweredQuestionnaire = step === questions.length;
 
   return (
-    <section id="qualificacao" className="py-20 bg-white">
+    <section id="qualificacao" className="white-section">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            A Metodologia Casa Viva é para você?
+            O método Casa Viva é para você?
           </h2>
           <p className="text-lg text-gray-700">
             Responda a algumas perguntas rápidas para determinar se minha
