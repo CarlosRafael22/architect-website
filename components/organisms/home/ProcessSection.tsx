@@ -9,7 +9,7 @@ const processSteps = [
     number: "01",
     title: "Briefing e avaliação",
     description:
-      "Discutiremos seus objetivos, necessidades e pontos problemáticos atuais. Avaliarei como seu espaço atual impacta a função cognitiva e o bem-estar emocional. Avaliarei também como o espaço deve se adequar funcionalmente ao seu dia-a-dia e necessidades e seus gostos estéticos para o espaço. ",
+      "Conversaremos sobre seus objetivos, necessidades e pontos problemáticos atuais. Avaliarei como seu espaço atual pode estar impactando seu bem-estar. Avaliarei também como o espaço deve se adequar funcionalmente ao seu dia-a-dia, necessidades físicas, emocionais e seus gostos estéticos para o espaço.",
     duration: "1 reunião, entre 2 a 3 horas.",
     investment: "Consulta inicial gratuita",
   },
@@ -17,7 +17,7 @@ const processSteps = [
     number: "02",
     title: "Desenvolvimento de conceito e planta de layout",
     description:
-      "Criarei moodboard conceito com base em princípios de neurociência que atendam às suas necessidades específicas, incorporando iluminação, acústica, layout espacial e materiais. Além da planta de layout com locação dos ambientes e/ou móveis.",
+      "Criarei moodboard conceito com base em princípios de Neuroarquitetura que atendam às suas necessidades específicas, incorporando iluminação, acústica, layout espacial, materiais e aromas. Além disso, farei a planta de layout com locação dos ambientes e/ou móveis.",
     duration: "Personalizável",
     investment: "$2,000 - $5,000 depending on project scope",
   },
@@ -49,102 +49,59 @@ const processSteps = [
 
 export default function ProcessSection() {
   return (
-    <section id="fases" className="py-20 bg-white">
+    <section id="fases" className="white-section">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Fases dos projetos
+            Fases do projeto
           </h2>
           <p className="text-lg text-gray-700">
-            O meu processo de design é baseado em evidências científicas para
-            garantir que seu espaço seja não apenas belo, mas também
+            O meu processo de projetar é baseado em evidências científicas para
+            garantir que seu espaço seja não apenas bonito, mas também
             cientificamente otimizado para o bem-estar e a função.
           </p>
         </div>
 
-        <div className="relative mb-16">
+        <div className="relative">
           <div className="relative">
             <div
-              className="overflow-x-auto pb-8"
-              onScroll={(e) => {
-                const container = e.currentTarget;
-                const firstElement =
-                  container.firstElementChild?.firstElementChild;
-                const lastElement =
-                  container.firstElementChild?.lastElementChild;
-
-                if (!firstElement || !lastElement) return;
-
-                const containerRect = container.getBoundingClientRect();
-                const firstElementRect = firstElement.getBoundingClientRect();
-                const lastElementRect = lastElement.getBoundingClientRect();
-
-                const showLeftArrow =
-                  firstElementRect.left < containerRect.left;
-                const showRightArrow =
-                  lastElementRect.right > containerRect.right;
-
-                const leftArrow = container.parentElement?.querySelector(
-                  '[data-arrow="left"]'
-                );
-                const rightArrow = container.parentElement?.querySelector(
-                  '[data-arrow="right"]'
-                );
-
-                if (leftArrow) {
-                  leftArrow.classList.toggle("opacity-0", !showLeftArrow);
-                  leftArrow.classList.toggle(
-                    "pointer-events-none",
-                    !showLeftArrow
-                  );
-                }
-                if (rightArrow) {
-                  rightArrow.classList.toggle("opacity-0", !showRightArrow);
-                  rightArrow.classList.toggle(
-                    "pointer-events-none",
-                    !showRightArrow
-                  );
-                }
-              }}
+              className="overflow-x-auto pb-8 snap-x snap-mandatory"
+              id="process-carousel"
             >
               <div className="relative flex space-x-6 min-w-max">
                 {processSteps.map((step, index) => (
-                  <ProcessStep {...step} key={index} />
+                  <div key={index} className="w-full md:w-auto snap-start">
+                    <ProcessStep {...step} />
+                  </div>
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className="flex justify-center gap-4 mt-4">
             <button
-              data-arrow="left"
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition-all opacity-0 pointer-events-none md:block z-10"
-              onClick={(e) => {
-                const scrollContainer =
-                  e.currentTarget.parentElement?.querySelector(
-                    ".overflow-x-auto"
-                  );
-                if (scrollContainer) {
-                  scrollContainer.scrollLeft -= 500;
+              className="bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition-all"
+              onClick={() => {
+                const carousel = document.getElementById("process-carousel");
+                if (carousel) {
+                  carousel.scrollLeft -= carousel.offsetWidth;
                 }
               }}
             >
               <ArrowLeft size={24} className="text-gray-700" />
             </button>
             <button
-              data-arrow="right"
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition-all md:block z-10"
-              onClick={(e) => {
-                const scrollContainer =
-                  e.currentTarget.parentElement?.querySelector(
-                    ".overflow-x-auto"
-                  );
-                if (scrollContainer) {
-                  scrollContainer.scrollLeft += 500;
+              className="bg-white/80 p-2 rounded-full shadow-md hover:bg-white transition-all"
+              onClick={() => {
+                const carousel = document.getElementById("process-carousel");
+                if (carousel) {
+                  carousel.scrollLeft += carousel.offsetWidth;
                 }
               }}
             >
               <ArrowRight size={24} className="text-gray-700" />
             </button>
           </div>
-          <div className="absolute left-0 right-0 bottom-0 h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
         </div>
 
         {/*         <div className="text-center">
