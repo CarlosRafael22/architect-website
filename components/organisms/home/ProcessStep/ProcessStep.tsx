@@ -14,7 +14,7 @@ const ProcessStep = ({
   investment, */
 }: ProcessStepProps) => {
   return (
-    <div className="w-80 bg-gray-50 rounded-xl p-6 shadow-sm flex flex-col">
+    <div className="w-80 bg-gray-50 rounded-xl p-6 shadow-sm flex flex-col h-full">
       <div className="text-4xl font-bold text-primary mb-4">{number}</div>
       <h3 className="text-xl font-bold mb-4">{title}</h3>
       <p className="text-gray-600 mb-6 flex-grow">{description}</p>
