@@ -2,7 +2,10 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Montserrat, Cormorant_Garamond } from "next/font/google";
+import Clarity from "@microsoft/clarity";
 import "./globals.css";
+
+Clarity.init(process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID!);
 
 const montserrat = Montserrat({
   subsets: ["latin"],
